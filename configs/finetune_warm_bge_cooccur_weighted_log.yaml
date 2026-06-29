@@ -1,0 +1,32 @@
+processed_dir: data/processed_warm_bge_cooccur_weighted_log_m2_k50
+
+hidden_dim: 128
+num_layers: 2
+scorer: dot
+scorer_dropout: 0.1
+encoder_dropout: 0.2
+batch_size: 32
+epochs: 50
+weight_decay: 0.0001
+device: cuda
+checkpoint_path: outputs/checkpoints/recommender_warm_bge_cooccur_weighted_log_best.pt
+
+use_text: true
+fusion_mode: mlp
+text_dropout: 0.1
+text_weight: 0.5
+
+align_weight: 0.05
+align_loss_type: mse
+contrastive_temperature: 0.2
+align_sample_size: 1024
+
+# Keep dual-view off by default, because current experiments showed it is unstable.
+use_view_contrast: false
+view_contrast_weight: 0.0
+view_contrast_temperature: 0.2
+view_contrast_sample_size: 1024
+view_contrast_target: api
+
+# Use the edge_weight stored on (api, co_used_with, api).
+use_cooccur_edge_weight: true

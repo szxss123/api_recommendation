@@ -1,0 +1,16 @@
+processed_dir: data/processed_hybrid_bge
+hidden_dim: 128
+num_layers: 2
+scorer: dot
+batch_size: 32
+epochs: 30
+lr: 0.001
+weight_decay: 0.0001
+device: cuda
+checkpoint_path: outputs/checkpoints/recommender_bge_best.pt
+
+use_text: true
+fusion_mode: mlp
+text_dropout: 0.1
+text_weight: 0.5
+align_weight: 0.05

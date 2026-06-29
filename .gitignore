@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Python environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# IDE / system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+credentials.json
+
+# Raw and processed datasets
+data/
+data_unified/
+
+# Training outputs
+outputs/
+archived_results/
+logs/
+wandb/
+runs/
+
+# Model checkpoints and generated embeddings
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Temporary/generated files
+*.log
+*.tmp
+*.bak
+*.zip
+*.tar
+*.tar.gz
+
+# Third-party cloned repository
+external/MTFM/
