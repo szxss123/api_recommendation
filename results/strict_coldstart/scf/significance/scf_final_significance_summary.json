@@ -1,0 +1,18 @@
+{
+  "strict_clean_mashups": 879,
+  "comparisons": [
+    {
+      "method_a": "SCF-LightGCN+BGE",
+      "method_b": "Inductive LightGCN"
+    },
+    {
+      "method_a": "SCF-LightGCN+BGE",
+      "method_b": "Inductive BPR-MF"
+    },
+    {
+      "method_a": "SCF-LightGCN+BGE",
+      "method_b": "Graph+BGE"
+    }
+  ],
+  "bootstrap_samples": 10000
+}
