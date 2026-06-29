@@ -8,6 +8,8 @@ Outputs
 overall_metrics.csv
 overlap_summary.csv
 per_mashup_overlap.csv
+per_mashup_metrics.csv
+rankings_topk.csv
 group_metrics.csv
 recommendation_composition.csv
 api_groups.csv
@@ -371,6 +373,95 @@ def metrics_for_rankings(
         "eligible_mashups": count,
         **{key: value / count for key, value in sums.items()},
     }
+
+
+
+def per_mashup_metric_rows(
+    rankings_by_method: Mapping[str, Mapping[int, Sequence[int]]],
+    positives: Mapping[int, Set[int]],
+    ks: Sequence[int],
+) -> List[Dict[str, Any]]:
+    """
+    Return one row per method and Mashup.
+
+    These values use exactly the same Recall/NDCG/HitRate/AP@K definitions as
+    metrics_for_rankings(), so averaging each metric column reproduces the
+    corresponding overall metric.
+    """
+    rows: List[Dict[str, Any]] = []
+
+    for method, rankings in rankings_by_method.items():
+        for mashup_id in sorted(positives):
+            true_set = positives[mashup_id]
+            if not true_set:
+                continue
+
+            ranked = [int(value) for value in rankings[mashup_id]]
+            row: Dict[str, Any] = {
+                "method": method,
+                "mashup_id": int(mashup_id),
+                "num_positives": int(len(true_set)),
+            }
+
+            for k in ks:
+                topk = ranked[:k]
+                hits = [1 if api_id in true_set else 0 for api_id in topk]
+                hit_count = int(sum(hits))
+
+                row[f"Recall@{k}"] = hit_count / float(len(true_set))
+                row[f"HitRate@{k}"] = 1.0 if hit_count > 0 else 0.0
+
+                ideal = [1] * min(len(true_set), k)
+                idcg = dcg(ideal)
+                row[f"NDCG@{k}"] = (
+                    dcg(hits) / idcg if idcg > 0 else 0.0
+                )
+
+                precision_sum = 0.0
+                cumulative_hits = 0
+                for rank, hit in enumerate(hits, start=1):
+                    if hit:
+                        cumulative_hits += 1
+                        precision_sum += cumulative_hits / float(rank)
+
+                row[f"MAP@{k}"] = (
+                    precision_sum / float(min(len(true_set), k))
+                )
+
+            rows.append(row)
+
+    return rows
+
+
+def ranking_rows(
+    rankings_by_method: Mapping[str, Mapping[int, Sequence[int]]],
+    positives: Mapping[int, Set[int]],
+    group_map: Mapping[int, str],
+    max_k: int,
+) -> List[Dict[str, Any]]:
+    """
+    Save the actual Top-K lists for later diversity and case-study analysis.
+    """
+    rows: List[Dict[str, Any]] = []
+    for method, rankings in rankings_by_method.items():
+        for mashup_id in sorted(positives):
+            true_set = positives[mashup_id]
+            for rank, api_id in enumerate(
+                rankings[mashup_id][:max_k],
+                start=1,
+            ):
+                api_id = int(api_id)
+                rows.append(
+                    {
+                        "method": method,
+                        "mashup_id": int(mashup_id),
+                        "rank": int(rank),
+                        "api_id": api_id,
+                        "is_positive": int(api_id in true_set),
+                        "api_group": group_map[api_id],
+                    }
+                )
+    return rows
 
 
 def build_api_groups(
@@ -812,6 +903,47 @@ def main() -> None:
         overall_rows.append({"method": method, **values})
     overall_df = pd.DataFrame(overall_rows)
 
+    per_mashup_metrics_df = pd.DataFrame(
+        per_mashup_metric_rows(
+            rankings_by_method,
+            target_positives,
+            args.ks,
+        )
+    )
+    rankings_topk_df = pd.DataFrame(
+        ranking_rows(
+            rankings_by_method,
+            target_positives,
+            group_map,
+            max_k,
+        )
+    )
+
+    # Integrity check: the mean of per-Mashup metrics must reproduce the
+    # overall metrics written by this script.
+    for method in rankings_by_method:
+        per_method = per_mashup_metrics_df[
+            per_mashup_metrics_df["method"] == method
+        ]
+        overall_method = overall_df[
+            overall_df["method"] == method
+        ].iloc[0]
+        for k in args.ks:
+            for metric_name in (
+                f"Recall@{k}",
+                f"NDCG@{k}",
+                f"HitRate@{k}",
+                f"MAP@{k}",
+            ):
+                left = float(per_method[metric_name].mean())
+                right = float(overall_method[metric_name])
+                if not np.isclose(left, right, atol=1e-10, rtol=1e-8):
+                    raise RuntimeError(
+                        "Per-Mashup metric integrity check failed: "
+                        f"method={method}, metric={metric_name}, "
+                        f"per_mashup_mean={left}, overall={right}"
+                    )
+
     per_mashup_df, overlap_df = overlap_analysis(
         ours_rankings,
         pop_rankings,
@@ -860,6 +992,14 @@ def main() -> None:
         output_dir / "per_mashup_overlap.csv",
         index=False,
     )
+    per_mashup_metrics_df.to_csv(
+        output_dir / "per_mashup_metrics.csv",
+        index=False,
+    )
+    rankings_topk_df.to_csv(
+        output_dir / "rankings_topk.csv",
+        index=False,
+    )
     group_df.to_csv(output_dir / "group_metrics.csv", index=False)
     composition_df.to_csv(
         output_dir / "recommendation_composition.csv",
@@ -882,6 +1022,8 @@ def main() -> None:
         "popularity_penalty": trainer.popularity_penalty,
         "group_api_counts": dict(Counter(group_map.values())),
         "overall_metrics": overall_df.to_dict(orient="records"),
+        "per_mashup_metric_rows": int(len(per_mashup_metrics_df)),
+        "ranking_rows": int(len(rankings_topk_df)),
         "overlap_summary": overlap_df.to_dict(orient="records"),
         "group_metrics": group_df.to_dict(orient="records"),
         "recommendation_composition": composition_df.to_dict(
@@ -927,6 +1069,8 @@ def main() -> None:
         "overall_metrics.csv",
         "overlap_summary.csv",
         "per_mashup_overlap.csv",
+        "per_mashup_metrics.csv",
+        "rankings_topk.csv",
         "group_metrics.csv",
         "recommendation_composition.csv",
         "api_groups.csv",
