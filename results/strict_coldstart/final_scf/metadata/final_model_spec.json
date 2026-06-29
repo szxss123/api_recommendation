@@ -1,0 +1,61 @@
+{
+  "frozen_at_utc": "2026-06-29T11:35:18.560801+00:00",
+  "final_method_name": "SCF-LightGCN+BGE",
+  "primary_task": "strict new-Mashup cold-start API recommendation",
+  "secondary_observation": "partial zero-shot capability for APIs unseen in training interactions",
+  "score_formula": "0.35 * z(Inductive-LightGCN score) + 0.65 * z(BGE Mashup-API score)",
+  "lightgcn_weight": 0.35,
+  "bge_weight": 0.65,
+  "popularity_weight": 0.0,
+  "normalization": "per-Mashup row-wise z-score over the full API catalog",
+  "weight_selection_split": "validation only",
+  "weight_selection_seed": 0,
+  "weight_selection_rule": "NDCG@10 > MAP@10 > Recall@10",
+  "test_seeds": [
+    0,
+    1,
+    2
+  ],
+  "test_tuning_prohibited": true,
+  "source_selected_weights": {
+    "model": "SCF-LightGCN+BGE+Popularity",
+    "selection_split": "validation",
+    "selection_seed": 0,
+    "selection_rule": "NDCG@10 > MAP@10 > Recall@10",
+    "normalization": "per-Mashup row z-score",
+    "lightgcn_weight": 0.35,
+    "bge_weight": 0.65,
+    "popularity_weight": 0.0,
+    "fusion_grid_step": 0.05,
+    "lightgcn_hyperparameters": {
+      "knn_k": 20,
+      "latent_dim": 128,
+      "learning_rate": 0.01,
+      "lightgcn_layers": 1,
+      "regularization": 0.0001,
+      "selected_best_epoch_seed0": 500,
+      "selection_metrics": {
+        "Recall@5": 0.6738792569630143,
+        "NDCG@5": 0.6565314279392946,
+        "MAP@5": 0.6048271078630396,
+        "Recall@10": 0.7189101784707932,
+        "NDCG@10": 0.6698873672071902,
+        "MAP@10": 0.6106086313263972
+      }
+    },
+    "lightgcn_common": {
+      "epochs": 500,
+      "eval_every": 10,
+      "patience": 10,
+      "projection_temperature": 0.07,
+      "device": "cuda"
+    },
+    "seed0_best_epoch": 500,
+    "selected_hyperparameter_file": "/home/szx2025/code/api_recommendation/outputs/strict_baselines/convergence/selected_hyperparameters.json"
+  },
+  "reporting_constraints": [
+    "Do not claim significant superiority over Inductive LightGCN on the strict-clean subset.",
+    "Describe Unseen APIs as unseen in training interactions, not necessarily unseen to the pretrained text encoder.",
+    "Do not attribute SCF gains to the heterogeneous graph branch; the final SCF contains LightGCN and BGE only."
+  ]
+}

@@ -1,0 +1,26 @@
+audit_csv: outputs/strict_leakage_audit/mashup_audit.csv
+
+baseline_per_mashup_csv: outputs/strict_baselines/test/new_baseline_per_mashup_metrics.csv
+
+graph_method_source: outputs/statistical_analysis/runs
+
+output_dir: outputs/strict_clean_subset_analysis
+
+# Conservative thresholds selected before examining clean-subset method results.
+cosine_thresholds:
+  - 0.99
+  - 0.95
+
+bootstrap_samples: 10000
+random_seed: 2026
+
+method_order:
+  - Popularity
+  - TF-IDF
+  - BM25
+  - Category-Jaccard
+  - BGE
+  - Inductive BPR-MF
+  - Inductive LightGCN
+  - Graph-only
+  - Graph+BGE

@@ -1,0 +1,27 @@
+frozen_at_utc=2026-06-29T11:35:18Z
+git_commit=1bdcc875738109c6d8a0125fe7300454009df602
+git_branch=main
+
+[git status --short]
+ M results/strict_coldstart/ablation_table.csv
+ D results/strict_coldstart/final_scf/main/fusion_validation_leaderboard.csv
+ D results/strict_coldstart/final_scf/main/selected_fusion_weights.json
+?? analysis/
+?? build_text_embeddings.py
+?? check_data.py
+?? export_text_emb.py
+?? external/
+?? results/strict_coldstart/final_scf/audit/
+?? results/strict_coldstart/final_scf/baseline/
+?? results/strict_coldstart/final_scf/main/scf_rankings_top10_seed0.csv
+?? results/strict_coldstart/final_scf/main/scf_rankings_top10_seed1.csv
+?? results/strict_coldstart/final_scf/main/scf_rankings_top10_seed2.csv
+?? results/strict_coldstart/final_scf/metadata/
+?? results/strict_coldstart/final_scf/model/
+?? results/strict_coldstart/final_scf/reproducibility/
+?? results/strict_coldstart/final_scf/robustness/clean_subset_main_table_mean_std.csv
+?? results/strict_coldstart/final_scf/significance/scf_final_significance_summary.json
+?? run.py
+?? scripts/freeze_final_scf_results.sh
+?? scripts/verify_frozen_scf_results.sh
+?? test.py

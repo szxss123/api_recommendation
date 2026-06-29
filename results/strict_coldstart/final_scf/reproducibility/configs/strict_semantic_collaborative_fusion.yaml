@@ -1,0 +1,30 @@
+# Strict dataset/model locator.
+reference_config: configs/finetune_mtfm_cold_strict_zscore_seed0.yaml
+
+# The first existing file is used. The convergence file is preferred.
+selected_hyperparameter_candidates:
+  - outputs/strict_baselines/convergence/selected_hyperparameters.json
+  - outputs/strict_baselines/validation/selected_hyperparameters.json
+
+baseline_results_by_seed: outputs/strict_baselines/test/baseline_results_by_seed.csv
+
+# Used only for supplementary strict-clean reporting.
+audit_csv: outputs/strict_leakage_audit/mashup_audit.csv
+strict_clean_cosine_threshold: 0.95
+
+output_dir: outputs/strict_semantic_collaborative_fusion
+
+# All nonnegative weight triples summing to one are tested on validation.
+fusion_grid_step: 0.05
+
+table_method_order:
+  - Popularity
+  - TF-IDF
+  - BM25
+  - Category-Jaccard
+  - BGE
+  - Inductive BPR-MF
+  - Inductive LightGCN
+  - Graph-only
+  - Graph+BGE
+  - SCF-LightGCN+BGE+Popularity

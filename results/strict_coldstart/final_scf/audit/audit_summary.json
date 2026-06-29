@@ -1,0 +1,21 @@
+{
+  "num_test_mashups": 1645,
+  "exact_train_text_duplicate_count": 4,
+  "exact_train_name_duplicate_count": 95,
+  "direct_api_name_mention_mashup_count": 705,
+  "direct_api_name_mention_mashup_rate": 0.42857142857142855,
+  "mean_direct_api_name_mention_recall": 0.32502793477398834,
+  "top1_neighbor_shares_positive_mashup_count": 1114,
+  "top1_neighbor_shares_positive_mashup_rate": 0.6772036474164134,
+  "mean_top1_shared_positive_recall": 0.5299080386554649,
+  "mean_topk_union_positive_recall": 0.7903810404048606,
+  "top1_cosine_mean": 0.7926031460515633,
+  "top1_cosine_median": 0.7795727849006653,
+  "top1_cosine_max": 0.9978693723678589,
+  "near_duplicate_threshold_counts": {
+    "0.90": 148,
+    "0.95": 118,
+    "0.98": 78,
+    "0.99": 42
+  }
+}
