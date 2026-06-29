@@ -1,0 +1,7 @@
+subset,num_mashups,retained_rate
+full,1645,1.0
+deduplicated,1550,0.9422492401215805
+deduplicated_no_api_mention,893,0.5428571428571428
+deduplicated_cosine_lt_099,1545,0.939209726443769
+deduplicated_cosine_lt_095,1521,0.9246200607902736
+strict_clean_cosine_lt_095,879,0.5343465045592705

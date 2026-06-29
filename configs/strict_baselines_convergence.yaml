@@ -1,0 +1,53 @@
+reference_config: configs/finetune_mtfm_cold_strict_zscore_seed0.yaml
+existing_ablation_by_seed: outputs/final_strict_ablation/summary/overall_by_seed.csv
+existing_methods_to_merge:
+- Popularity
+- BGE
+- Graph-only
+- Graph+BGE
+external_results_csv: ''
+verification_tolerance: 1.0e-05
+selection_seed: 0
+deterministic_methods:
+- Popularity
+- TF-IDF
+- BM25
+- BGE
+- Category-Jaccard
+collaborative_common:
+  epochs: 500
+  eval_every: 10
+  patience: 10
+  projection_temperature: 0.07
+  device: cuda
+bpr_grid:
+  latent_dim:
+  - 128
+  knn_k:
+  - 10
+  learning_rate:
+  - 0.01
+  regularization:
+  - 0.0001
+lightgcn_grid:
+  latent_dim:
+  - 128
+  knn_k:
+  - 20
+  learning_rate:
+  - 0.01
+  regularization:
+  - 0.0001
+  lightgcn_layers:
+  - 1
+table_method_order:
+- Popularity
+- TF-IDF
+- BM25
+- Category-Jaccard
+- BGE
+- Inductive BPR-MF
+- Inductive LightGCN
+- Graph-only
+- Graph+BGE
+- MTFM

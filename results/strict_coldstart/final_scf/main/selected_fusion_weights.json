@@ -1,0 +1,36 @@
+{
+  "model": "SCF-LightGCN+BGE+Popularity",
+  "selection_split": "validation",
+  "selection_seed": 0,
+  "selection_rule": "NDCG@10 > MAP@10 > Recall@10",
+  "normalization": "per-Mashup row z-score",
+  "lightgcn_weight": 0.35,
+  "bge_weight": 0.65,
+  "popularity_weight": 0.0,
+  "fusion_grid_step": 0.05,
+  "lightgcn_hyperparameters": {
+    "knn_k": 20,
+    "latent_dim": 128,
+    "learning_rate": 0.01,
+    "lightgcn_layers": 1,
+    "regularization": 0.0001,
+    "selected_best_epoch_seed0": 500,
+    "selection_metrics": {
+      "Recall@5": 0.6738792569630143,
+      "NDCG@5": 0.6565314279392946,
+      "MAP@5": 0.6048271078630396,
+      "Recall@10": 0.7189101784707932,
+      "NDCG@10": 0.6698873672071902,
+      "MAP@10": 0.6106086313263972
+    }
+  },
+  "lightgcn_common": {
+    "epochs": 500,
+    "eval_every": 10,
+    "patience": 10,
+    "projection_temperature": 0.07,
+    "device": "cuda"
+  },
+  "seed0_best_epoch": 500,
+  "selected_hyperparameter_file": "/home/szx2025/code/api_recommendation/outputs/strict_baselines/convergence/selected_hyperparameters.json"
+}

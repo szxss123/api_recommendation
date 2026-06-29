@@ -1,0 +1,16 @@
+reference_config: configs/finetune_mtfm_cold_strict_zscore_seed0.yaml
+
+output_dir: outputs/strict_leakage_audit
+
+reverse_mapping_filename: reverse_node_mapping.pkl
+
+topk_neighbors: 20
+chunk_size: 256
+
+near_duplicate_thresholds:
+  - 0.90
+  - 0.95
+  - 0.98
+  - 0.99
+
+report_top_cases: 20
