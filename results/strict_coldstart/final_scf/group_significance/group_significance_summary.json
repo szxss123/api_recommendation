@@ -1,0 +1,33 @@
+{
+  "comparisons": [
+    {
+      "method_a": "SCF-LightGCN+BGE",
+      "method_b": "Inductive LightGCN"
+    },
+    {
+      "method_a": "SCF-LightGCN+BGE",
+      "method_b": "Graph+BGE"
+    }
+  ],
+  "groups": [
+    "Head",
+    "Middle",
+    "Tail",
+    "Unseen"
+  ],
+  "metrics": [
+    "Recall@5",
+    "NDCG@5",
+    "MAP@5",
+    "Recall@10",
+    "NDCG@10",
+    "MAP@10"
+  ],
+  "subsets": [
+    "full",
+    "strict_clean"
+  ],
+  "bootstrap_samples": 10000,
+  "holm_primary_family": "all 48 tests within each subset",
+  "strict_clean_mashups": 879
+}

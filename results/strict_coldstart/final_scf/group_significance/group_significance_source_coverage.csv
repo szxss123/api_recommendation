@@ -1,0 +1,10 @@
+method,seed,num_mashups,num_rows,minimum_rank,maximum_rank
+Graph+BGE,0,1645,16450,1,10
+Graph+BGE,1,1645,16450,1,10
+Graph+BGE,2,1645,16450,1,10
+Inductive LightGCN,0,1645,16450,1,10
+Inductive LightGCN,1,1645,16450,1,10
+Inductive LightGCN,2,1645,16450,1,10
+SCF-LightGCN+BGE,0,1645,16450,1,10
+SCF-LightGCN+BGE,1,1645,16450,1,10
+SCF-LightGCN+BGE,2,1645,16450,1,10

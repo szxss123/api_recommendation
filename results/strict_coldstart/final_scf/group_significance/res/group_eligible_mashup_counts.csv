@@ -1,0 +1,9 @@
+subset,group,eligible_mashups,mean_positive_apis_per_mashup
+full,Head,1487,1.9630127774041695
+full,Middle,237,1.2658227848101267
+full,Tail,110,1.1545454545454545
+full,Unseen,144,1.3611111111111112
+strict_clean,Head,808,1.9108910891089108
+strict_clean,Middle,107,1.308411214953271
+strict_clean,Tail,53,1.1132075471698113
+strict_clean,Unseen,73,1.4383561643835616

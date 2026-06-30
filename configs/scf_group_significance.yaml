@@ -1,0 +1,15 @@
+reference_config: configs/finetune_mtfm_cold_strict_zscore_seed0.yaml
+
+api_groups_source: outputs/statistical_analysis/runs/graph_bge_zscore/seed0/api_groups.csv
+
+graph_bge_rankings_template: outputs/statistical_analysis/runs/graph_bge_zscore/seed{seed}/rankings_topk.csv
+lightgcn_rankings_template: outputs/inductive_lightgcn_rankings/inductive_lightgcn_rankings_top10_seed{seed}.csv
+scf_rankings_template: outputs/strict_semantic_collaborative_fusion/scf_rankings_top10_seed{seed}.csv
+
+audit_csv: outputs/strict_leakage_audit/mashup_audit.csv
+strict_clean_cosine_threshold: 0.95
+
+bootstrap_samples: 10000
+random_seed: 2026
+
+output_dir: results/strict_coldstart/final_scf/group_significance
