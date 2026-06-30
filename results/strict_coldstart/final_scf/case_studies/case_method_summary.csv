@@ -1,0 +1,17 @@
+case_type,case_label,mashup_id,mashup_name,method,num_positives,hit_count,consensus_recall@10,first_hit_rank,hit_api_ids,hit_api_names
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,2,1,0.5,9.0,417,Geocoder.ca
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,2,1,0.5,1.0,624,Google Maps
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,2,1,0.5,1.0,624,Google Maps
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,2,2,1.0,1.0,624;417,Google Maps; Geocoder.ca
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,1,1,1.0,1.0,1385,Ifixit
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,1,0,0.0,,,
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,1,0,0.0,,,
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,1,1,1.0,2.0,1385,Ifixit
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,1,1,1.0,1.0,29,Gethealth
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,1,0,0.0,,,
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,1,0,0.0,,,
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,1,1,1.0,1.0,29,Gethealth
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,6,0,0.0,,,
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,6,0,0.0,,,
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,6,0,0.0,,,
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,6,0,0.0,,,

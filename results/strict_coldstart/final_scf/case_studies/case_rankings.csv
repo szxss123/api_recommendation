@@ -1,0 +1,161 @@
+case_type,case_label,mashup_id,mashup_name,method,consensus_rank,api_id,api_name,api_group,train_frequency,is_ground_truth,seed_appearances,mean_rank_when_present,reciprocal_rank_score
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,1,535,Zoopla,Tail,1,0,3,1.0,3.0
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,2,1280,Rentometer,Unseen,0,0,3,2.0,1.5
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,3,1235,Microsoft Mappoint,Middle,5,0,3,3.0,1.0
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,4,31,Roomorama,Unseen,0,0,3,4.0,0.75
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,5,1335,1map,Tail,1,0,3,5.0,0.6000000000000001
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,6,1177,Tourcms Marketplace,Middle,5,0,3,6.0,0.5
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,7,396,Hotelston,Unseen,0,0,3,7.0,0.42857142857142855
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,8,659,Facebook Business Mapping,Tail,1,0,3,8.0,0.375
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,9,417,Geocoder.ca,Middle,4,1,3,9.0,0.3333333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,BGE-only,10,1065,Globexplorer,Middle,2,0,3,10.0,0.30000000000000004
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,1,624,Google Maps,Head,1898,1,3,1.3333333333333333,2.5
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,2,975,Commission Junction,Head,27,0,3,4.333333333333333,1.4444444444444444
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,3,96,Amazon Product Advertising,Head,322,0,3,2.3333333333333335,1.3333333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,4,221,Microsoft Bing Maps,Head,126,0,3,3.6666666666666665,0.8333333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,5,867,Facebook,Head,354,0,2,5.5,0.39285714285714285
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,6,226,Google Base,Head,49,0,2,5.5,0.3666666666666667
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,7,1069,Youtube,Head,513,0,2,5.5,0.3666666666666667
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,8,1590,Zillow,Head,20,0,2,7.0,0.3111111111111111
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,9,634,Ebay,Head,164,0,2,7.0,0.29166666666666663
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Graph+BGE,10,196,Panoramio,Head,37,0,2,7.5,0.26785714285714285
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,1,624,Google Maps,Head,1898,1,3,1.0,3.0
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,2,750,Oodle,Head,21,0,3,2.3333333333333335,1.3333333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,3,77,Yahoo Geocoding,Head,75,0,3,4.333333333333333,0.7499999999999999
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,4,765,Bigtribe,Middle,5,0,3,6.0,0.5357142857142857
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,5,1329,Geocoder,Head,30,0,2,4.0,0.5333333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,6,1582,Google Fusion Tables,Head,16,0,1,2.0,0.5
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,7,940,Sletoh.com,Middle,3,0,3,7.333333333333333,0.4361111111111111
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,8,1100,Google Adsense,Head,64,0,2,5.5,0.39285714285714285
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,9,637,Google Maps Data,Head,35,0,2,5.5,0.3666666666666667
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,Inductive LightGCN,10,91,Google Earth,Head,43,0,2,9.0,0.225
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,1,624,Google Maps,Head,1898,1,3,1.0,3.0
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,2,1177,Tourcms Marketplace,Middle,5,0,3,2.3333333333333335,1.3333333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,3,417,Geocoder.ca,Middle,4,1,3,3.3333333333333335,1.0333333333333332
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,4,1065,Globexplorer,Middle,2,0,2,3.5,0.5833333333333333
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,5,1235,Microsoft Mappoint,Middle,5,0,3,5.666666666666667,0.5595238095238095
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,6,990,Openstreetmap,Head,14,0,2,5.0,0.41666666666666663
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,7,750,Oodle,Head,21,0,3,8.0,0.4111111111111111
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,8,1329,Geocoder,Head,30,0,2,8.0,0.25
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,9,53,Mapstraction,Tail,1,0,2,8.5,0.24285714285714285
+middle_rescue,Middle API 语义协同补救案例,6361,Rentals By Owner Canada,SCF-LightGCN+BGE,10,659,Facebook Business Mapping,Tail,1,0,2,8.5,0.2361111111111111
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,1,1385,Ifixit,Tail,1,1,3,1.0,3.0
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,2,797,Handset Detection,Tail,1,0,3,2.0,1.5
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,3,1427,Producteev,Tail,2,0,3,3.0,1.0
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,4,960,Windshieldrepair Tech Auto Glass,Tail,1,0,3,4.0,0.75
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,5,1442,Mobile Phone Megastore,Tail,1,0,3,5.0,0.6000000000000001
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,6,1473,Hacker News Mobile,Tail,1,0,3,6.0,0.5
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,7,1461,Allogarage,Tail,1,0,3,7.0,0.42857142857142855
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,8,1346,Pricerunner,Head,6,0,3,8.0,0.375
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,9,1536,Moves,Tail,1,0,3,9.0,0.3333333333333333
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,BGE-only,10,618,Evernote,Head,10,0,3,10.0,0.30000000000000004
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,1,226,Google Base,Head,49,0,3,2.6666666666666665,2.166666666666667
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,2,1069,Youtube,Head,513,0,3,3.0,1.6666666666666667
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,3,413,Google Homepage,Head,77,0,3,3.3333333333333335,1.0333333333333332
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,4,634,Ebay,Head,164,0,3,3.3333333333333335,0.9166666666666665
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,5,1079,Twitter,Head,629,0,3,4.666666666666667,0.8428571428571427
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,6,624,Google Maps,Head,1898,0,2,5.0,0.41666666666666663
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,7,314,411sync,Head,85,0,2,5.5,0.39285714285714285
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,8,712,Twilio,Head,270,0,2,7.5,0.26785714285714285
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,9,976,Amazon S3,Head,77,0,2,9.5,0.2111111111111111
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Graph+BGE,10,1346,Pricerunner,Head,6,0,1,5.0,0.2
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,1,611,Wikia,Tail,1,0,3,1.0,3.0
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,2,960,Windshieldrepair Tech Auto Glass,Tail,1,0,3,2.0,1.5
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,3,85,Mediatemple,Middle,2,0,3,5.666666666666667,0.6190476190476191
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,4,1045,Recognize.im,Middle,2,0,2,4.0,0.5333333333333333
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,5,1218,Angellist,Head,6,0,1,3.0,0.3333333333333333
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,6,480,Gatekrash,Tail,1,0,2,7.5,0.2777777777777778
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,7,880,Tesco,Tail,1,0,1,4.0,0.25
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,8,1278,Food,Middle,3,0,1,4.0,0.25
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,9,1501,Coindesk,Head,7,0,1,4.0,0.25
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,Inductive LightGCN,10,780,Gamesradar,Middle,2,0,1,5.0,0.2
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,1,960,Windshieldrepair Tech Auto Glass,Tail,1,0,3,1.0,3.0
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,2,1385,Ifixit,Tail,1,1,3,2.3333333333333335,1.3333333333333333
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,3,1427,Producteev,Tail,2,0,3,3.3333333333333335,1.0
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,4,797,Handset Detection,Tail,1,0,3,3.3333333333333335,0.9166666666666666
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,5,1442,Mobile Phone Megastore,Tail,1,0,3,5.0,0.6000000000000001
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,6,1461,Allogarage,Tail,1,0,3,6.0,0.5
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,7,1055,Bike Index,Tail,1,0,3,8.666666666666666,0.35396825396825393
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,8,69,Evoca,Tail,1,0,2,7.5,0.26785714285714285
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,9,1536,Moves,Tail,1,0,2,9.0,0.225
+tail_rescue,Tail API 语义协同补救案例,5242,Fix It Repair Guides Android,SCF-LightGCN+BGE,10,618,Evernote,Head,10,0,1,7.0,0.14285714285714285
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,1,29,Gethealth,Unseen,0,1,3,1.0,3.0
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,2,567,Microsoft Healthvault,Tail,1,0,3,2.0,1.5
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,3,1583,Ihealth,Tail,1,0,3,3.0,1.0
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,4,344,Datarella,Tail,1,0,3,4.0,0.75
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,5,460,Health 2.0,Unseen,0,0,3,5.0,0.6000000000000001
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,6,1398,Information Machine,Tail,1,0,3,6.0,0.5
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,7,1288,Cnet,Head,13,0,3,7.0,0.42857142857142855
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,8,360,Strava,Middle,2,0,3,8.0,0.375
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,9,1237,Bioid Web Services,Middle,2,0,3,9.0,0.3333333333333333
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,BGE-only,10,1351,Misfit,Unseen,0,0,3,10.0,0.30000000000000004
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,1,1069,Youtube,Head,513,0,3,1.0,3.0
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,2,1079,Twitter,Head,629,0,3,2.6666666666666665,1.25
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,3,627,Fitbit,Head,19,0,3,3.3333333333333335,1.0333333333333332
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,4,1288,Cnet,Head,13,0,3,4.0,0.7833333333333333
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,5,867,Facebook,Head,354,0,3,4.0,0.7833333333333332
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,6,712,Twilio,Head,270,0,3,6.333333333333333,0.47619047619047616
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,7,13,Twilio Sms,Head,141,0,3,9.0,0.33611111111111114
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,8,96,Amazon Product Advertising,Head,322,0,2,7.0,0.2857142857142857
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,9,226,Google Base,Head,49,0,2,9.0,0.225
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Graph+BGE,10,1401,Last.fm,Head,178,0,2,9.5,0.2111111111111111
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,1,627,Fitbit,Head,19,0,3,1.0,3.0
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,2,1410,Withings,Middle,4,0,3,2.0,1.5
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,3,473,Yolink,Middle,2,0,3,5.0,0.6761904761904762
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,4,1583,Ihealth,Tail,1,0,3,5.333333333333333,0.5928571428571429
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,5,344,Datarella,Tail,1,0,3,6.666666666666667,0.5166666666666666
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,6,527,Runkeeper Health Graph,Middle,3,0,3,7.666666666666667,0.46111111111111114
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,7,1408,Mynetdiary Food Search,Tail,1,0,3,7.666666666666667,0.4095238095238095
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,8,78,Jawbone Up,Middle,3,0,1,3.0,0.3333333333333333
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,9,1281,Donorschoose,Head,15,0,1,3.0,0.3333333333333333
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,Inductive LightGCN,10,567,Microsoft Healthvault,Tail,1,0,2,8.0,0.25
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,1,29,Gethealth,Unseen,0,1,3,1.0,3.0
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,2,567,Microsoft Healthvault,Tail,1,0,3,2.3333333333333335,1.3333333333333333
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,3,627,Fitbit,Head,19,0,3,2.6666666666666665,1.1666666666666665
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,4,1583,Ihealth,Tail,1,0,3,4.333333333333333,0.7
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,5,344,Datarella,Tail,1,0,3,4.666666666666667,0.65
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,6,1410,Withings,Middle,4,0,3,6.666666666666667,0.4523809523809524
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,7,527,Runkeeper Health Graph,Middle,3,0,3,7.0,0.43452380952380953
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,8,1398,Information Machine,Tail,1,0,3,8.0,0.39166666666666666
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,9,460,Health 2.0,Unseen,0,0,2,9.0,0.2222222222222222
+unseen_rescue,训练交互未见 API 零样式补救案例,5544,Get Digitalhealth Patient Generated Health Data Pilots,SCF-LightGCN+BGE,10,1281,Donorschoose,Head,15,0,1,8.0,0.125
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,1,902,Sap Anywhere,Unseen,0,0,3,1.0,3.0
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,2,1363,Bookingmarkets,Tail,1,0,3,2.0,1.5
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,3,1097,Redbooth,Unseen,0,0,3,3.0,1.0
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,4,784,Cross.io,Tail,1,0,3,4.0,0.75
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,5,937,Elance,Unseen,0,0,3,5.0,0.6000000000000001
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,6,557,Constantcontact,Unseen,0,0,3,6.0,0.5
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,7,1021,Sugarsync,Middle,4,0,3,7.0,0.42857142857142855
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,8,1201,Envato,Tail,1,0,3,8.0,0.375
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,9,1412,Marketo,Tail,1,0,3,9.0,0.3333333333333333
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,BGE-only,10,494,Arcweb,Unseen,0,0,3,10.0,0.30000000000000004
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,1,624,Google Maps,Head,1898,0,3,1.3333333333333333,2.5
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,2,1079,Twitter,Head,629,0,3,1.6666666666666667,2.0
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,3,1069,Youtube,Head,513,0,3,3.0,1.0
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,4,867,Facebook,Head,354,0,3,4.0,0.75
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,5,634,Ebay,Head,164,0,3,5.0,0.6000000000000001
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,6,96,Amazon Product Advertising,Head,322,0,3,6.333333333333333,0.47619047619047616
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,7,381,Yahoo Maps,Head,97,0,2,7.0,0.29166666666666663
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,8,90,Flickr,Head,458,0,2,7.0,0.2857142857142857
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,9,712,Twilio,Head,270,0,2,8.5,0.2361111111111111
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Graph+BGE,10,1401,Last.fm,Head,178,0,2,9.5,0.2111111111111111
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,1,976,Amazon S3,Head,77,0,3,1.3333333333333333,2.5
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,2,735,Box,Head,62,0,3,2.6666666666666665,1.5833333333333333
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,3,1319,Sendgrid,Head,11,0,3,4.333333333333333,0.8928571428571428
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,4,712,Twilio,Head,270,0,3,4.333333333333333,0.8666666666666667
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,5,13,Twilio Sms,Head,141,0,3,5.0,0.6666666666666666
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,6,610,Dropbox,Head,21,0,3,4.666666666666667,0.65
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,7,221,Microsoft Bing Maps,Head,126,0,1,3.0,0.3333333333333333
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,8,865,Heroku,Head,10,0,2,9.0,0.225
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,9,1516,Google Drive,Head,14,0,2,9.0,0.225
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,Inductive LightGCN,10,714,Google Storage,Middle,3,0,2,9.5,0.2111111111111111
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,1,976,Amazon S3,Head,77,0,3,2.6666666666666665,2.1666666666666665
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,2,1021,Sugarsync,Middle,4,0,3,3.0,1.0
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,3,221,Microsoft Bing Maps,Head,126,0,1,1.0,1.0
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,4,1319,Sendgrid,Head,11,0,3,5.333333333333333,0.85
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,5,712,Twilio,Head,270,0,3,5.0,0.825
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,6,735,Box,Head,62,0,2,5.5,0.6111111111111112
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,7,1412,Marketo,Tail,1,0,3,5.333333333333333,0.5928571428571429
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,8,13,Twilio Sms,Head,141,0,3,6.333333333333333,0.5277777777777777
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,9,651,Cloud Elements Platform,Tail,1,0,3,7.333333333333333,0.41666666666666663
+complex_failure,复杂多 API 失败案例,4799,Esync Dashboard,SCF-LightGCN+BGE,10,112,Sugarcrm,Middle,2,0,3,8.0,0.3857142857142857

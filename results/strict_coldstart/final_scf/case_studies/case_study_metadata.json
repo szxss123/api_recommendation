@@ -1,0 +1,22 @@
+{
+  "method_order": [
+    "BGE-only",
+    "Graph+BGE",
+    "Inductive LightGCN",
+    "SCF-LightGCN+BGE"
+  ],
+  "case_labels": {
+    "middle_rescue": "Middle API 语义协同补救案例",
+    "tail_rescue": "Tail API 语义协同补救案例",
+    "unseen_rescue": "训练交互未见 API 零样式补救案例",
+    "complex_failure": "复杂多 API 失败案例"
+  },
+  "selection_uses_three_seed_consensus": true,
+  "direct_api_name_filter_enabled": true,
+  "direct_api_name_filter_scope": "Mashup title plus description",
+  "consensus_rule": "sum reciprocal ranks; then seed appearances; then mean rank",
+  "k": 10,
+  "strict_clean_cosine_threshold": 0.95,
+  "reverse_mapping_path": "/home/szx2025/code/api_recommendation/data/processed_mtfm_cold_strict_bge_weighted_log_m2_k50/reverse_node_mapping.pkl",
+  "selected_case_count": 4
+}
