@@ -1,0 +1,43 @@
+\begin{table*}[t]
+\centering
+\caption{Overall performance under strict new-Mashup cold start. Results are mean $\pm$ population standard deviation over three seeds.}
+\label{tab:main_results}
+\small
+\begin{tabular}{lcccccc}
+\toprule
+Method & R@5 & NDCG@5 & MAP@5 & R@10 & NDCG@10 & MAP@10 \\
+\midrule
+Popularity & 0.3921 $\pm$ 0.0000 & 0.3602 $\pm$ 0.0000 & 0.3107 $\pm$ 0.0000 & 0.4821 $\pm$ 0.0000 & 0.3910 $\pm$ 0.0000 & 0.3230 $\pm$ 0.0000 \\
+TF-IDF & 0.3008 $\pm$ 0.0000 & 0.2608 $\pm$ 0.0000 & 0.2230 $\pm$ 0.0000 & 0.3682 $\pm$ 0.0000 & 0.2857 $\pm$ 0.0000 & 0.2334 $\pm$ 0.0000 \\
+BM25 & 0.3378 $\pm$ 0.0000 & 0.2974 $\pm$ 0.0000 & 0.2563 $\pm$ 0.0000 & 0.4113 $\pm$ 0.0000 & 0.3236 $\pm$ 0.0000 & 0.2672 $\pm$ 0.0000 \\
+Category-Jaccard & 0.0994 $\pm$ 0.0000 & 0.0751 $\pm$ 0.0000 & 0.0583 $\pm$ 0.0000 & 0.1401 $\pm$ 0.0000 & 0.0894 $\pm$ 0.0000 & 0.0635 $\pm$ 0.0000 \\
+BGE & 0.2545 $\pm$ 0.0000 & 0.2214 $\pm$ 0.0000 & 0.1904 $\pm$ 0.0000 & 0.3152 $\pm$ 0.0000 & 0.2435 $\pm$ 0.0000 & 0.1994 $\pm$ 0.0000 \\
+Inductive BPR-MF & 0.6523 $\pm$ 0.0023 & 0.6506 $\pm$ 0.0016 & 0.6019 $\pm$ 0.0013 & 0.6983 $\pm$ 0.0017 & 0.6652 $\pm$ 0.0001 & 0.6084 $\pm$ 0.0006 \\
+Inductive LightGCN & 0.6682 $\pm$ 0.0004 & 0.6601 $\pm$ 0.0004 & 0.6098 $\pm$ 0.0005 & 0.7199 $\pm$ 0.0037 & 0.6769 $\pm$ 0.0012 & 0.6171 $\pm$ 0.0008 \\
+Graph-only & 0.3921 $\pm$ 0.0000 & 0.3599 $\pm$ 0.0004 & 0.3104 $\pm$ 0.0004 & 0.4813 $\pm$ 0.0040 & 0.3899 $\pm$ 0.0012 & 0.3218 $\pm$ 0.0004 \\
+Graph+BGE & 0.5722 $\pm$ 0.0084 & 0.5347 $\pm$ 0.0296 & 0.4743 $\pm$ 0.0351 & 0.6420 $\pm$ 0.0041 & 0.5591 $\pm$ 0.0266 & 0.4855 $\pm$ 0.0336 \\
+\textbf{SCF-LightGCN+BGE} & \textbf{0.7149 $\pm$ 0.0021} & \textbf{0.6964 $\pm$ 0.0003} & \textbf{0.6418 $\pm$ 0.0005} & \textbf{0.7739 $\pm$ 0.0024} & \textbf{0.7158 $\pm$ 0.0004} & \textbf{0.6505 $\pm$ 0.0003} \\
+\bottomrule
+\end{tabular}
+\vspace{2pt}
+\begin{minipage}{0.98\linewidth}
+\footnotesize
+SCF is significantly better than Inductive LightGCN on all six metrics after Holm correction ($p<0.001$).
+\end{minipage}
+\end{table*}
+
+\begin{table}[t]
+\centering
+\caption{Diversity and popularity bias at $K=10$ on the full test set.}
+\label{tab:diversity}
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & Cov. & LT-Cov. & Pers. & Gini$\downarrow$ & Pop.$\downarrow$ & Nov. \\
+\midrule
+Graph+BGE & 0.1305 & 0.0382 & 0.7534 & 0.9754 & 342.55 & 6.6681 \\
+LightGCN & 0.4602 & 0.4339 & 0.8889 & 0.9225 & 239.46 & 7.7301 \\
+\textbf{SCF} & \textbf{0.7308} & \textbf{0.7093} & \textbf{0.9516} & \textbf{0.8135} & \textbf{160.81} & \textbf{9.3011} \\
+\bottomrule
+\end{tabular}
+\end{table}

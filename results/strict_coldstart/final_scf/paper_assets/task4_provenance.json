@@ -1,0 +1,31 @@
+{
+  "final_method": "SCF-LightGCN+BGE",
+  "weights": {
+    "lightgcn": 0.35,
+    "bge": 0.65,
+    "popularity": 0.0
+  },
+  "sources": [
+    "/mnt/data/baseline_results_by_seed.csv",
+    "/mnt/data/scf_results_extract/scf_results_by_seed.csv",
+    "/mnt/data/scf_full_extract/semantic_collaborative_fusion_report.md",
+    "/mnt/data/clean_subset_report.md",
+    "/mnt/data/task4_diversity/outputs/scf_tail_diversity/diversity_metrics_mean_std.csv",
+    "/mnt/data/task4_diversity/outputs/scf_tail_diversity/group_exposure_mean_std.csv",
+    "/mnt/data/task4_diversity/outputs/scf_tail_diversity/group_accuracy_mean_std.csv",
+    "/mnt/data/group_significance_uploaded/group_significance_results.csv"
+  ],
+  "figure_formats": [
+    "PNG 300 dpi",
+    "SVG",
+    "PDF"
+  ],
+  "created_files": [
+    "task4_final_tables.xlsx",
+    "task4_tables_and_captions.md",
+    "task4_tables_latex.tex",
+    "figures/*.png",
+    "figures/*.svg",
+    "figures/*.pdf"
+  ]
+}
